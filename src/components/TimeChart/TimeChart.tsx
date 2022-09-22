@@ -54,7 +54,7 @@ export const TimeChart: React.FC = () => {
         spent time (seconds)
       </h2>
 
-      <div className="time__chart">
+      <div className="time__chart" data-testid="time-chart">
         {times.map((time, index) => (
           <TimeItem
             name={time.name}
@@ -71,6 +71,7 @@ export const TimeChart: React.FC = () => {
         type="button"
         className="time__button"
         onClick={handleRandomClick}
+        data-testid="random-btn"
       >
         RANDOM
       </button>

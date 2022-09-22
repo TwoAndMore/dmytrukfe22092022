@@ -4,7 +4,7 @@ import { TimeChart } from './components/TimeChart/TimeChart';
 
 export const App: React.FC = () => {
   return (
-    <div className="app">
+    <div className="app" data-testid="app">
       <TimeChart />
     </div>
   );
