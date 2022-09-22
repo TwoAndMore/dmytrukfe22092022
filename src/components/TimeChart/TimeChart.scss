@@ -1,5 +1,6 @@
 .time {
-  width: 600px;
+  max-width: 600px;
+
   padding: 10px;
   margin: 0 auto;
 
@@ -19,8 +20,8 @@
 
   &__item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 
     margin-bottom: 14px;
 
@@ -33,7 +34,9 @@
     max-width: 100px;
     min-width: 100px;
     margin-right: 10px;
+    margin-bottom: 4px;
 
+    text-align: center;
     color: #364156;
   }
 
@@ -42,21 +45,19 @@
 
     width: 400px;
     height: 30px;
-    background-color: #6d7585;
+    background-color: #9fa8b9;
   }
 
   &__data-fill {
     position: absolute;
-    left: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: inherit;
-    width: 100px;
 
-    background-color: #73d2de;
+    background-color: #6be6f8;
   }
 
   &__data-value {

@@ -12,8 +12,8 @@ import { TimeItem } from '../TimeItem/TimeItem';
 
 export const TimeChart: React.FC = () => {
   const [times, setTimes] = useState<spentTime[]>(timeSpent);
+  const [areaWidth, setAreaWidth] = useState(400);
 
-  const areaWidth = 400;
   const autoTimeClick = 31800;
 
   const wholeTime = times.reduce((a, b) => a + b.time, 0);
@@ -61,6 +61,7 @@ export const TimeChart: React.FC = () => {
             left={offsetLeft(index)}
             fill={elementsWidth[index]}
             value={times[index].time}
+            setWidth={setAreaWidth}
             key={time.name + time.time}
           />
         ))}
